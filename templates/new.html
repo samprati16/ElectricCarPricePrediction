@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<!--suppress XmlInvalidId -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Machine Learning</title>
+    <link rel="stylesheet" href= "{{ url_for('static', filename='static/style/new.css') }}">
+</head>
+<body>
+<h2>Car Price Prediction </h2>
+
+<br>
+
+<form action="{{url_for('predict')}}" method="post">
+
+    <h3>Predict Electric Car Price</h3>
+
+    <input type="text" name="AccelSec" class="AccelSec" placeholder="Acceleration (s)"/>
+    
+    <input type="number" name="TopSpeed_KmH" class="TopSpeed_KmH" placeholder="Top Speed (km/h)"/>
+
+    <br>
+
+    <input type="number" name="Range_Km" class="Range_Km" placeholder="Range (km)"/>
+
+    <input type="number" name="Efficiency_WhKm" class="Efficiency_WhKm" placeholder="Efficiency (Wh/km)"/>
+    
+    <br>
+
+    <input type="number" name="FastCharge_KmH" class="FastCharge_KmH" placeholder="Fast Charge (km/h)"/>
+
+    <input type="number" name="Seats" class="Seats" placeholder="Seat Capacity"/>
+
+    <br>
+
+    <input type="submit" value="Predict" class="submit"/>
+
+    <br>
+
+    <p class="price">Estimated car price is € {{output}}</p>
+</form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Quicksand:wght@300&family=Rouge+Script&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+  font-family: Quicksand;
+  font-size: 2.8em;
+  text-align: center;
+}
+
+form{
+  font-family: Quicksand;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.AccelSec,.TopSpeed_KmH,.Range_Km,.Efficiency_WhKm,.FastCharge_KmH,.Seats{
+  border-radius: 30px;
+  background: whitesmoke;
+  border: 0;
+  height: 25px;
+  width: 250px;
+  margin: 10px;
+  outline: none;
+  font-family: Quicksand;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px;
+  text-align: center;
+}
+
+input{
+  border-radius: 30px;
+  font-family: Quicksand;
+  font-weight: 600;
+  font-size: 17px;
+  border: 1px solid gray;
+  background: transparent;
+  width: 90px;
+  padding: 12px;
+  margin: 15px;
+  outline: none;
+  color: #474747;
+}
+
+input:hover{
+  background: rgb(219, 219, 219);
+}
+
+.submit:hover{
+  background: gray;
+  color: white;
+}
+
+p{
+  font-weight: bolder;
+  margin: 8px;
+  margin-left: 22.5em;
+  padding: 12px;
+  color: #474747;
+}
+
+.price{
+  border: 2px solid whitesmoke;
+  background: whitesmoke;
+  width: 430px;
+  border-radius: 40px;
+}
